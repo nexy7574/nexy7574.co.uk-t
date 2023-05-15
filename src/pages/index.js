@@ -13,7 +13,7 @@ export default function Index() {
                     <p>Transgender people are <span style={{textDecoration: "underline"}}>just the scape goat</span>.</p>
                     <p>Who knows who it&apos;ll be after us.</p>
                     <br/>
-                    <p><strong>🏳‍⚧Trans rights are human rights.</strong></p>
+                    <p><strong><span>🏳‍⚧</span>Trans rights are human rights.</strong></p>
                 </div>
                 <footer>
                     <i style={{fontSize: "13px"}}>

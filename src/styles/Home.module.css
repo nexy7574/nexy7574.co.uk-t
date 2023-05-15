@@ -1,3 +1,6 @@
+/*noinspection CssUnknownTarget*/
+@import url("https://fonts.googleapis.com/css?family=Noto%20Color%20Emoji&weight=400");
+
 .main {
     display: flex;
     justify-content: center;
@@ -32,3 +35,6 @@
     }
 }
 
+.emoji {
+    font-family: "Noto Color Emoji", Arial, sans-serif;
+}
