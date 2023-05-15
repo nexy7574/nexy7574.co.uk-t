@@ -15,16 +15,16 @@ export default function Index() {
                     <br/>
                     <p><strong>🏳‍⚧Trans rights are human rights.</strong></p>
                 </div>
-                <footer >
+                <footer>
                     <i style={{fontSize: "13px"}}>
                         <p>Looking for my old page?</p>
                         <a
-                            href={"https://web.archive.org/web/20230405105048/https://nexy7574.co.uk/"}
+                            href={"https://old.nexy7574.co.uk/"}
                             target={"_blank"}
                             rel={"noopener"}
                             style={{color: "#1B78E5"}}
                         >
-                            web.archive.org
+                            old.nexy7574.co.uk
                         </a>
                     </i>
                 </footer>
