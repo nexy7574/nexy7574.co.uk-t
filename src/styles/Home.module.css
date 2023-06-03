@@ -16,10 +16,10 @@
     border-radius: 4vw;
     box-shadow: black 4px 4px 4px inset;
     min-width: 50vw;
-    min-height: 50vh;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    /*min-height: 50vh;*/
+    /*justify-content: left;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
 }
 
 @media screen and (max-width: 500px) {
