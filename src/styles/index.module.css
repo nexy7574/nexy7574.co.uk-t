@@ -20,7 +20,8 @@
 }
 
 .links a {
-    color: #3BA1D6
+    color: #3BA1D6;
+    cursor: pointer;
 }
 
 .links span {
