@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Noto%20Color%20Emoji&weight=400");
+
+.middleDiv {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem
+}
+
+.links {
+    font-size: 14px;
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.links a {
+    color: #3BA1D6
+}
+
+.links span {
+    padding: 0 1rem
+}
+
+.fs {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.divider {
+    display: unset
+}
+
+.linksItem::marker {
+    display: none
+}
+
+@media screen and (max-width: 700px) {
+    .middleDiv > div > h2 {
+        font-size: 1rem;
+    }
+    .divider {
+        display: none
+    }
+    .links {
+        flex-direction: column;
+        gap: 1vh
+    }
+    .links li a {
+        font-size: 0.9rem;
+    }
+}
+
+.trans_blue {color: #5BCEFA}
+.trans_pink {color: #F5A9B8}
+.trans_white {color: #fff}
+
+.lesbian_one {color: #D62900}
+.lesbian_two {color: #F07722}
+.lesbian_three {color: #FF9B55}
+.lesbian_four {color: #fff}
+.lesbian_five {color: #D262A6}
+.lesbian_six {color: #B75591}
+.lesbian_seven {color: #A50062}
+
+.pride_one {color: #FF0000}
+.pride_two {color: #FFA500}
+.pride_three {color: #FFFF00}
+.pride_four {color: #008000}
+.pride_five {color: #0000FF}
+.pride_six {color: #800080}
+
+.ace_one {color: #000000; text-shadow: white 0 0 1rem}
+.ace_two {color: #A5A5A5}
+.ace_three {color: #FFFFFF}
+.ace_four {color: #810081}
