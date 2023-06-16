@@ -112,12 +112,9 @@ export default function Home() {
             "Energy companies profit in crisis.",
             "Medical companies profit in crisis.",
             "I'm happy you exist.",
-            "\"Step in line, everything will be fine\"",
-            "\"Tell me, how did we get here?\"",
             "Potato potato potato potato",
             "Potato potato potato potato potato",
             "Potato potato potato potato potato potato potato",
-            "Easy to smile when you're pointing the gun"
         ]
         const phrase = phrases[Math.floor(Math.random() * phrases.length)];
         const words = renderWords(phrase.split(/\s+/));
@@ -146,19 +143,19 @@ export default function Home() {
                 </span>
             </div>
             <ul className={styles.links}>
-                <Link href={"//old.nexy7574.co.uk"} text={"Old Site"}/>
+                <Link href={"https://old.nexy7574.co.uk"} text={"Old Site"}/>
                 <Div/>
-                <Link href={"//github.com/EEKIM10/"} text={"GitHub"}/>
+                <Link href={"https://github.com/EEKIM10/"} text={"GitHub"}/>
                 <Div/>
-                <Link href={"//matrix.to/#/@nex:nexy7574.co.uk"} text={"Contact"}/>
+                <Link href={"https://matrix.to/#/@nex:nexy7574.co.uk"} text={"Contact"}/>
                 <Div/>
-                <Link rel={"//files.nexy7574.co.uk/share/"} text={"File Share"}/>
+                <Link href={"https://files.nexy7574.co.uk/share/"} text={"File Share"}/>
                 <Div/>
-                <Link rel={"/chat/"} text={"Element Mirror"}/>
+                <Link href={"/chat/"} text={"Element Mirror"}/>
                 <Div/>
-                <Link href={"//ferdi-is.gay"} text={"ferdi-is.gay"}/>
+                <Link href={"https://ferdi-is.gay"} text={"ferdi-is.gay"}/>
                 <Div/>
-                <Link href={"//matthew-is.gay"} text={"matthew-is.gay"}/>
+                <Link href={"https://matthew-is.gay"} text={"matthew-is.gay"}/>
             </ul>
         </main>
     )
