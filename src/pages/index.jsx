@@ -127,6 +127,17 @@ export default function Home() {
     return (
         <main className={styles.middleDiv}>
             <title>My Site</title>
+            <div style={{"text-align": "center", "margin": "100px auto", "background": '#A00'}}>
+                <p>The matrix homeserver running under this domain will be offline during Monday the 7th of August.</p>
+                <p>Downtime is expected to start around noon (BST), and will last between an hour, up to 48 hours.</p>
+                <p>After the maintinence is completed, the homeserver will be slow and/or unresponsive for up to an hour after functionality
+                    is restored, while Synapse catches up with backlog.
+                </p>
+                <hr/>
+                <p>If you need to contact me during this time, you can message me on
+                    <Link href={"https://matrix.to/#/@eek4015:matrix.org"} text={"matrix.org"}/>, temporarily.
+                </p>
+            </div>
             <div style={{width: "100%"}}>
                 <div>
                     <h2 onClick={newPhrase} style={{cursor: "default"}}>
