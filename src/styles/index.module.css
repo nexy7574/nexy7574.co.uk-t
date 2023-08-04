@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto%20Color%20Emoji&weight=400");
 
 .middleDiv {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,3 +80,12 @@
 .ace_two {color: #A5A5A5}
 .ace_three {color: #FFFFFF}
 .ace_four {color: #810081}
+
+.notice {
+    text-align: center;
+    font-size: 16px;
+    background: #a00;
+    border: 1px solid #f00;
+    border-radius: 2em;
+    padding: 20px
+}
