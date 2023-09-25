@@ -158,18 +158,11 @@ export default function Home() {
                 <Div/>
                 <Link href={"https://matthew-is.gay"} text={"matthew-is.gay"}/>
             </ul>
-            {/* <div className={styles.notice}>
-                <h2>Maintinence notice</h2>
-                <p>The matrix homeserver running under this domain will be offline during Monday the 7th of August.</p>
-                <p>Downtime is expected to start around noon (BST), and will last between an hour, up to 48 hours.</p>
-                <p>After the maintinence is completed, the homeserver will be slow and/or unresponsive for up to an hour after functionality
-                    is restored, while Synapse catches up with backlog.
-                </p>
-                <hr/>
-                <p>If you need to contact me during this time, you can message me on
-                    &nbsp;<a href={"https://matrix.to/#/@eek4015:matrix.org"}>matrix.org</a>, temporarily.
-                </p>
-            </div> */}
+            <div className={styles.notice}>
+                <h2>Uptime notice</h2>
+                <p>I have recently migrated servers and re-configured all of my domains. If something is missing,
+                    please contact me on matrix.</p>
+            </div>
         </main>
         </>
     )
