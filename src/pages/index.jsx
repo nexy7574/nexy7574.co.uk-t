@@ -104,14 +104,7 @@ export default function Home() {
     const [state, setState] = useState([])
     const newPhrase = () => {
         const phrases = [
-            "Actions speak louder than words.",
             "Live laugh love, womp womp.",
-            "\"Just f*** the hell out\"",
-            "\"Can you hack my instagram?\"",
-            "\"Sorry! No death for you!\"",
-            "Energy companies profit in crisis.",
-            "Medical companies profit in crisis.",
-            "I'm happy you exist.",
             "Potato potato potato potato",
             "Potato potato potato potato potato",
             "Potato potato potato potato potato potato potato",
