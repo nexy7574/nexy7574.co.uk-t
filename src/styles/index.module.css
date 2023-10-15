@@ -110,6 +110,13 @@
     background-color: black
 }
 
+.extIcon {
+    fill: white;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
 @media screen and (max-width: 1000px) {
     .linksContainer {
         grid: repeat(1, 1fr) / repeat(1, 1fr);

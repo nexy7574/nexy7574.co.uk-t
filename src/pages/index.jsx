@@ -1,4 +1,6 @@
 import styles from '@/styles/index.module.css';
+import externalIcon from '@/../public/ext.svg';
+import Image from 'next/image';
 import {useEffect, useState} from "react";
 
 
@@ -94,9 +96,31 @@ function renderWords(words) {
 function Link(props) {
     let text = props.text;
     let href = props.href;
+    let target = props.target;
+    if(!target) {
+        console.debug(href, (/(http(s)?:)?\/\//).test(href))
+        if((/(http(s)?:)?\/\//).test(href)) {
+            target = "_blank";
+        } else {
+            target = "_self";
+        }
+    }
     let display_text = text || href;
-    return <a className={styles.linksItem} rel={"noopener"} href={href}>[{display_text}]</a>
-    // return <li className={styles.linksItem}></li>
+    let icon;
+    if(target!== "_self") {
+        icon = <Image
+            src={externalIcon}
+            alt={"External Link"}
+            width={16}
+            height={16}
+            className={styles.extIcon}
+        />
+    } else {
+        icon = null
+    }
+    return (
+        <a className={styles.linksItem} rel={"noopener"} href={href} target={target}>[{display_text}] {icon}</a>
+    )
 }
 
 // const Div = () => <span className={styles.divider}>|</span>
@@ -110,7 +134,7 @@ const MY_LINKS = [
         text: "Contact Me"
     },
     {
-        url: "//web.archive.org/web20230405105048/https://nexy7574.co.uk/",
+        url: "//web.archive.org/web/20230405105048/https://nexy7574.co.uk/",
         text: "Old Site"
     },
     {
