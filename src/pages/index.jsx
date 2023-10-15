@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 
 
 function flexLanguages() {
-    alert('I know the following languages: bash/similar, Python 3, HTML+CSS+JS, NextJS, Rust')
+    alert('bash (shell), Python 3, HTML+CSS+JS, NextJS')
 }
 
 function renderWordsTrans(words) {
@@ -95,10 +95,49 @@ function Link(props) {
     let text = props.text;
     let href = props.href;
     let display_text = text || href;
-    return <li className={styles.linksItem}><a rel={"noopener"} href={href}>[{display_text}]</a></li>
+    return <a className={styles.linksItem} rel={"noopener"} href={href}>[{display_text}]</a>
+    // return <li className={styles.linksItem}></li>
 }
 
-const Div = () => <span className={styles.divider}>|</span>
+// const Div = () => <span className={styles.divider}>|</span>
+const MY_LINKS = [
+    {
+        url: "/about",
+        text: "About Me"
+    },
+    {
+        url: "/contact",
+        text: "Contact Me"
+    },
+    {
+        url: "//web.archive.org/web20230405105048/https://nexy7574.co.uk/",
+        text: "Old Site"
+    },
+    {
+        url: "//github.com/nexy7574/",
+        text: "GitHub"
+    },
+    {
+        url: "/chat/",
+        text: "SchildiChat Mirror"
+    },
+    {
+        url: "//ferdi-is.gay",
+        text: "ferdi-is.gay"
+    },
+    {
+        url: "//matthew-is.gay",
+        text: "matthew-is.gay"
+    },
+    {
+        url: "//howmuchdoesthesims4cost.lol",
+        text: "howmuchdoesthesims4cost.lol"
+    },
+    {
+        url: "//nio-bot.dev",
+        text: "nio-bot"
+    }
+]
 
 export default function Home() {
     const [state, setState] = useState([])
@@ -131,31 +170,22 @@ export default function Home() {
             <div style={{fontSize: "16px"}}>
                 <span>
                     17 | she/her |&nbsp;
-                    <span title={"(bash/similar, Python 3, HTML+CSS+JS, NextJS, Rust)"} onClick={flexLanguages} className={styles.fs}>
+                    <span title={"(bash/similar, Python 3, HTML+CSS+JS, NextJS)"} onClick={flexLanguages} className={styles.fs}>
                         full-stack
                     </span>
                 </span>
             </div>
-            <ul className={styles.links}>
-                <Link href={"https://old.nexy7574.co.uk"} text={"Old Site"}/>
-                <Div/>
-                <Link href={"https://github.com/EEKIM10/"} text={"GitHub"}/>
-                <Div/>
-                <Link href={"https://matrix.to/#/@nex:nexy7574.co.uk"} text={"Contact"}/>
-                <Div/>
-                <Link href={"https://files.nexy7574.co.uk/share/"} text={"File Share"}/>
-                <Div/>
-                <Link href={"/chat/"} text={"Element Mirror"}/>
-                <Div/>
-                <Link href={"https://ferdi-is.gay"} text={"ferdi-is.gay"}/>
-                <Div/>
-                <Link href={"https://matthew-is.gay"} text={"matthew-is.gay"}/>
-            </ul>
-            <div className={styles.notice}>
-                <h2>Uptime notice</h2>
-                <p>I have recently migrated servers and re-configured all of my domains. If something is missing,
-                    please contact me on matrix.</p>
+            <a href="//status.nexy7574.co.uk" target="_blank" rel="noopener">[Server Status]</a>
+            <div className={styles.linksContainer}>
+                {
+                    MY_LINKS.map((e, i) => <Link key={i} href={e.url} text={e.text}/>)
+                }
             </div>
+            {/*<div className={styles.notice}>*/}
+            {/*    <h2>Uptime notice</h2>*/}
+            {/*    <p>I have recently migrated servers and re-configured all of my domains. If something is missing,*/}
+            {/*        please contact me on matrix.</p>*/}
+            {/*</div>*/}
         </main>
         </>
     )

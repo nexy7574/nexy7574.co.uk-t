@@ -37,6 +37,10 @@
     display: unset
 }
 
+.linksItem {
+    font-size: 14px
+}
+
 .linksItem::marker {
     display: none
 }
@@ -88,4 +92,29 @@
     border: 1px solid #f00;
     border-radius: 2em;
     padding: 20px
+}
+
+.linksContainer {
+    display: grid;
+    grid-gap: 1rem;
+    grid: auto-flow / repeat(5, 1fr);
+    width: 75%;
+}
+.linksContainer > a {
+    transition: background-color 0.5s ease-in-out;
+    background-image: none;
+    padding: 8px
+}
+
+.linksContainer > a:hover {
+    background-color: black
+}
+
+@media screen and (max-width: 1000px) {
+    .linksContainer {
+        grid: repeat(1, 1fr) / repeat(1, 1fr);
+    }
+    .linksItem {
+        font-size: 0.9rem
+    }
 }
