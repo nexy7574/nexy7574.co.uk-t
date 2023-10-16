@@ -20,7 +20,7 @@ const nextConfig = {
   // Optionally, add any other Next.js config below
   reactStrictMode: true,
   output: "export",
-  images: {unoptimized = true}
+  images: {unoptimized: true}
 };
 
 // Merge MDX config with Next.js config
