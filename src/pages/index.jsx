@@ -143,7 +143,7 @@ const MY_LINKS = [
     },
     {
         url: "/chat/",
-        text: "SchildiChat Mirror"
+        text: "SchildiChat"
     },
     {
         url: "//ferdi-is.gay",
@@ -160,6 +160,10 @@ const MY_LINKS = [
     {
         url: "//nio-bot.dev",
         text: "nio-bot"
+    },
+    {
+        url: "//mastodon.nexy7574.co.uk",
+        text: "Mastodon"
     }
 ]
 
